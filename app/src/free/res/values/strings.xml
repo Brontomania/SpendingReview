@@ -1,0 +1,24 @@
+<resources>
+
+    <string name="hello_world">Hello world 4 FREE!</string>
+    <string name="app_name">Spending Review 4 FREE</string>
+    <string name="action_settings">FREE Settings</string>
+
+    <!-- TEST STRINGS -->
+    <string name="test_string_tot_in">TOT. IN</string>
+    <string name="test_string_tot_out">TOT. OUT</string>
+    <string name="test_string_last_mov">ULTIMO MOVIMENTO</string>
+
+    <!-- Google ADS -->
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+
+    <!-- Drawer List Items -->
+    <string-array name="drawer_list_001">
+        <item>Home</item>
+        <item>Settings</item>
+        <item>About</item>
+        <item>Exit</item>
+    </string-array>
+
+
+</resources>

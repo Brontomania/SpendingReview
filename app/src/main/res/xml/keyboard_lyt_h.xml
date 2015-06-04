@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyWidth="25%p"
+    android:keyHeight="12.50%p"
+    android:horizontalGap="0dp"
+	android:verticalGap="0dp">
+
+    <Row>
+		<Key android:codes="145" android:keyLabel="1" android:keyEdgeFlags="left" />
+		<Key android:codes="146" android:keyLabel="2" />
+		<Key android:codes="147" android:keyLabel="3" />
+        <Key android:codes="67" android:keyIcon="@drawable/sbl_kboard_del"
+             android:iconPreview="@drawable/sbl_kboard_del"
+             android:keyEdgeFlags="right" />
+	</Row>
+
+    <Row>
+		<Key android:codes="148" android:keyLabel="4" android:keyEdgeFlags="left" />
+		<Key android:codes="149" android:keyLabel="5" />
+		<Key android:codes="150" android:keyLabel="6" />
+        <Key android:codes="159" android:keyLabel="," android:keyEdgeFlags="right" />
+	</Row>
+
+	<Row>
+		<Key android:codes="151" android:keyLabel="7" android:keyEdgeFlags="left" />
+		<Key android:codes="152" android:keyLabel="8" />
+		<Key android:codes="153" android:keyLabel="9" />
+        <Key android:codes="144" android:keyLabel="0" android:keyEdgeFlags="right" />
+    </Row>
+
+	<Row>
+		<Key
+            android:keyWidth="100%p"
+            android:codes="160" android:keyEdgeFlags="right"
+			android:keyIcon="@drawable/sbl_kboard_carriage_return"
+			android:iconPreview="@drawable/sbl_kboard_carriage_return" />
+	</Row>
+
+</Keyboard>

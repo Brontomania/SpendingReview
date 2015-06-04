@@ -1,0 +1,3 @@
+include ':app', ':spending-review-lib'
+project(':spending-review-lib').projectDir = new File('spending-review-lib')
+
