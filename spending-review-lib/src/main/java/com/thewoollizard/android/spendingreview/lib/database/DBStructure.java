@@ -347,7 +347,6 @@ public class DBStructure extends SQLiteOpenHelper implements IDBStructure {
     //Table T_TAB_BDG drop table query definition
     private static final String TTABBDG_TABLE_DROP="DROP TABLE IF EXISTS " + TTABBdg.TB_NAME;
 
-    //FIXME: PIPPO
     //Table T_MOV_ITEMS definition: spending review items list
     public static class TMOVItems{
         public static final String TB_NAME="T_MOV_ITEMS";

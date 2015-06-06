@@ -12,4 +12,7 @@
     <dimen name="imgview_margin_001">5dp</dimen>
     <dimen name="imgview_margin_002">10dp</dimen>
 
+    <!-- Drawer Layout -->
+    <dimen name="drwlyt_left_width">240dp</dimen>
+
 </resources>

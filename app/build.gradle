@@ -2,13 +2,13 @@ apply plugin: 'com.android.application'
 
 android {
 
-    compileSdkVersion 21
-    buildToolsVersion "21.1.2"
+    compileSdkVersion 22
+    buildToolsVersion '22.0.1'
 
     defaultConfig {
         applicationId "com.thewoollizard.android.spendingreview"
         minSdkVersion 15
-        targetSdkVersion 21
+        targetSdkVersion 22
         versionCode 1
         versionName "1.0"
     }
@@ -21,25 +21,21 @@ android {
         }
     }
 
-    productFlavors{
-
+    productFlavors {
         free {
             applicationId "com.thewoollizard.android.spendingreview.free"
             versionName "1.0-free"
         }
-
         paid {
             applicationId "com.thewoollizard.android.spendingreview.paid"
             versionName "1.0-paid"
         }
-
-
     }
 
 }
 
 dependencies {
     provided fileTree(dir: 'libs', include: ['*.jar'])
-    provided 'com.android.support:appcompat-v7:21.0.3'
+    provided 'com.android.support:appcompat-v7:22.2.0'
     provided project(':spending-review-lib')
 }
