@@ -32,10 +32,14 @@ android {
         }
     }
 
+    compileOptions {
+
+    }
 }
 
 dependencies {
     provided fileTree(dir: 'libs', include: ['*.jar'])
-    provided 'com.android.support:appcompat-v7:22.2.0'
-    provided project(':spending-review-lib')
+    compile 'com.android.support:support-v4:22.2.0'
+    compile 'com.android.support:appcompat-v7:22.2.0'
+    compile project(':spending-review-lib')
 }

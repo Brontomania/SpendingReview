@@ -1,8 +1,8 @@
 package com.thewoollizard.android.spendingreview;
 
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
-
+import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import com.thewoollizard.android.spendingreview.dbmng.DBDAO;
 import com.thewoollizard.android.spendingreview.lib.settings.DateSeparator;
 import com.thewoollizard.android.spendingreview.lib.settings.NationalSetting;
@@ -14,7 +14,7 @@ import com.thewoollizard.android.spendingreview.lib.utilities.GlobalConst;
  * Created by @BrontoMania on 19/01/2015.
  */
 
-public class Base extends FragmentActivity {
+public class Base extends ActionBarActivity {
 
     protected DBDAO dbDAO;
     private DBTest dbTest;

@@ -1,8 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!--<string name="action_settings">Settings</string>
-    <string name="app_name">Spending Review</string>
-    <string name="hello_world">Hello world!</string>-->
+    <!-- TEST STRINGS -->
+    <string name="test_string_tot_in">TOT. IN</string>
+    <string name="test_string_tot_out">TOT. OUT</string>
+    <string name="test_string_last_mov">ULTIMO MOVIMENTO</string>
+
+    <!-- Drawer List Items -->
+    <string-array name="drawer_list_001">
+        <item>Home</item>
+        <item>Settings</item>
+        <item>About</item>
+        <item>Exit</item>
+    </string-array>
+
+    <!-- Drawer Title -->
+    <string name="on_open_drawer">DRAWER LIST</string>
+    <string name="on_close_drawer">ITEM LIST</string>
+
+
 
 </resources>

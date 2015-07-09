@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Spending Review Library</string>
+
+    <!--Left Drawer Title-->
+    <string name="drawer_title_left">Navigation</string>
+
 </resources>

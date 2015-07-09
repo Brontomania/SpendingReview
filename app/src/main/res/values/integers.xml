@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Toolbar -->
+    <integer name="content_inset_left">0</integer>
+    <integer name="content_inset_right">0</integer>
+</resources>
