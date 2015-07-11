@@ -3,18 +3,62 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <android.support.v7.widget.Toolbar
+    <LinearLayout
         android:id="@+id/home_toolbar"
-        android:elevation="5dp"
-        android:layout_height="?attr/actionBarSize"
-        android:layout_width="match_parent"
-        android:minHeight="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        android:gravity="left"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_drawer_toggle_small"
+            android:contentDescription="@string/drawer_toggle_content_des"
+            android:background="@android:color/transparent"
+            android:cropToPadding="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/app_name"
+            android:textStyle="bold"
+            android:layout_gravity="left"
+            android:textAlignment="gravity"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/home_toolbar_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/home_toolbar"
+        android:gravity="end"
+        >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_drawer_toggle_small"
+            android:contentDescription="@string/drawer_toggle_content_des"
+            android:background="@android:color/transparent"
+            android:cropToPadding="true"
+            />
+
+    </LinearLayout>
+
 
     <!-- Items ListView -->
     <ListView
         android:id="@+id/listview_items"
+        android:layout_below="@id/home_toolbar"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_gravity="start"
