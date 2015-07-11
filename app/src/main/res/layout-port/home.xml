@@ -11,12 +11,14 @@
         >
 
         <ImageButton
+            android:id="@+id/toolbar_drawer_btn"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:src="@drawable/ic_drawer_toggle_small"
             android:contentDescription="@string/drawer_toggle_content_des"
             android:background="@android:color/transparent"
             android:cropToPadding="true"
+            android:onClick="onClick"
             />
 
         <TextView
@@ -32,28 +34,6 @@
 
 
     </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/home_toolbar_btn"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_alignParentRight="true"
-        android:layout_toRightOf="@id/home_toolbar"
-        android:gravity="end"
-        >
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:src="@drawable/ic_drawer_toggle_small"
-            android:contentDescription="@string/drawer_toggle_content_des"
-            android:background="@android:color/transparent"
-            android:cropToPadding="true"
-            />
-
-    </LinearLayout>
-
 
     <!-- Items ListView -->
     <ListView

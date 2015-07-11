@@ -8,6 +8,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ListView;
 
 import com.thewoollizard.android.spendingreview.lib.IHome;
@@ -15,12 +16,13 @@ import com.thewoollizard.android.spendingreview.lib.IHome;
 /**
  * Created by @Brontomania on 06/06/2015.
  */
-public class Home extends Base implements IHome {
+public class Home extends Base implements IHome, View.OnClickListener {
 
     ListView mDrawerLeftList;
     ActionBarDrawerToggle mDrawerToggle;
     String mTitle, mDrawerTitle;
     DrawerLayout mDrawerLeftLayout;
+    ImageButton toolbarBtn;
 
 
     @Override
@@ -53,6 +55,13 @@ public class Home extends Base implements IHome {
         mDrawerLeftLayout.setDrawerListener(mDrawerToggle);
     }
 
+    public void toolbarCreation(){
+
+        ImageButton toolbarBtn=(ImageButton) findViewById(R.id.toolbar_drawer_btn);
+        toolbarBtn.setOnClickListener(this);
+
+    }
+
     @Override
     public void showLastItem() {
 
@@ -68,27 +77,15 @@ public class Home extends Base implements IHome {
 
     }
 
-    //Manage drawer action requests
-    private class LeftDrawerListener implements DrawerLayout.DrawerListener{
-
-        @Override
-        public void onDrawerSlide(View drawerView, float slideOffset) {
-
-        }
-
-        @Override
-        public void onDrawerOpened(View drawerView) {
-
-        }
-
-        @Override
-        public void onDrawerClosed(View drawerView) {
-
-        }
-
-        @Override
-        public void onDrawerStateChanged(int newState) {
-
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.toolbar_drawer_btn:
+                mDrawerLeftLayout.openDrawer(Gravity.LEFT);
+                break;
+            default:break;
         }
     }
+
+
 }
