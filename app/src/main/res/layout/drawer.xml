@@ -6,15 +6,31 @@
     
     <include layout="@layout/home"/>
 
-    <!-- ListView del Navigation Drawer -->    
-    <ListView
-        android:id="@+id/listview_drawer_left"
+    <!-- ListView del Navigation Drawer -->
+    <RelativeLayout
+        android:id="@+id/drawer_left_lyt"
         android:layout_width="@dimen/drwlyt_left_width"
-        android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:choiceMode="singleChoice"
-        android:divider="@color/col003_blueholo"
-        android:dividerHeight="0.1dp"
-        android:background="@android:color/holo_purple"/>
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/drawer_img"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher"
+            />
+
+        <ListView
+            android:id="@+id/listview_drawer_left"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/drawer_img"
+            android:choiceMode="singleChoice"
+            android:divider="@color/col003_blueholo"
+            android:dividerHeight="0.1dp"
+            android:background="@android:color/holo_purple"/>
+
+
+    </RelativeLayout>
     
 </android.support.v4.widget.DrawerLayout>

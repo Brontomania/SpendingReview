@@ -14,7 +14,7 @@ import com.thewoollizard.android.spendingreview.lib.utilities.GlobalConst;
  * Created by @BrontoMania on 19/01/2015.
  */
 
-public class Base extends ActionBarActivity {
+public class Base extends AppCompatActivity {
 
     protected DBDAO dbDAO;
     private DBTest dbTest;

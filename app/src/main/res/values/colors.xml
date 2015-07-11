@@ -3,5 +3,6 @@
     <color name="col001">#FFFF0000</color>
     <color name="col002_fadingpink">#80FF00FF</color>
 	<color name="col003_blueholo">#33B5E5</color>
-	<color name="col004_black">#000000</color>
+	<color name="col004_black">#000000</color>#EDAA00
+    <color name="col004_yellow">#EDAA00</color>
 </resources>
